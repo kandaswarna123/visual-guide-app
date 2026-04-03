@@ -47,9 +47,9 @@ function App() {
       setLoading(true);
 
       try {
-        const res = await axios.get(
-          `http://127.0.0.1:8000/ask?question=${encodeURIComponent(speechText)}`
-        );
+      const res = await axios.get(
+  `https://visual-guide-app.onrender.com/ask?question=${encodeURIComponent(speechText)}`
+);
 
         setSteps(res.data.steps);
         setAudioUrl(res.data.audio); // single audio
