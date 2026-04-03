@@ -73,7 +73,7 @@ async def generate_audio(text: str):
     communicate = edge_tts.Communicate(text, voice="te-IN-ShrutiNeural")
     await communicate.save(filepath)
 
-    return f"http://127.0.0.1:8000/audio/{filename}"
+    return f"/audio/{filename}"
 
 @app.get("/")
 def root():
