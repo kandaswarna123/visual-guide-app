@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #000000, #1a1a1a);
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #ff9800;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #ff9800;
+  margin-bottom: 20px;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.start {
+  background-color: #ff9800;
+  color: #000;
+}
+
+.btn.start.recording {
+  background-color: #f44336;
+  color: #fff;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 5px #f44336; }
+  50% { box-shadow: 0 0 20px #f44336; }
+  100% { box-shadow: 0 0 5px #f44336; }
+}
+
+.qa-box h3 {
+  color: #ffeb3b;
+}
+
+.qa-box h2 {
+  color: #03a9f4;
+  margin-top: 20px;
+}
+
+.steps-container {
+  margin-top: 15px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.step:hover {
+  background-color: #333;
+  box-shadow: 0 0 10px #ff9800;
+}
+
+.step img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.audio-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.audio-player {
+  width: 100%;
+  outline: none;
+  border-radius: 8px;
+}
